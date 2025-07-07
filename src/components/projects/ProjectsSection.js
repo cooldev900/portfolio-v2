@@ -1,8 +1,9 @@
-import ProjectRight from '../projects/ProjectRight';
 import ProjectLeft from '../projects/ProjectLeft';
-import SectionHeader from '../UI/SectionHeader';
-import ParagraphLight from '../UI/ParagraphLight';
+import ProjectRight from '../projects/ProjectRight';
 import H4Header from '../UI/H4Header';
+import ParagraphLight from '../UI/ParagraphLight';
+import SectionHeader from '../UI/SectionHeader';
+
 // import CodeLibraryItem from './components/projects/CodeLibraryItem';
 
 const ProjectsSection = props => {
@@ -10,7 +11,7 @@ const ProjectsSection = props => {
         <div class='bg-black'>
             <section id="section-projects">
                 <SectionHeader text={'Projects'} headerGradientStyle={'header-projects'} />
-                <ProjectRight
+                {/* <ProjectRight
                     projectTitle={'COVID-19 Dashboard'}
                     bgImage={'bg-virus'}
                     techStack={['HTML5', 'CSS3', 'GitHub', 'JS', 'Figma', 'Netlify']}
@@ -79,6 +80,170 @@ const ProjectsSection = props => {
                         <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/vAL7ocx5oZI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></iframe>
                         </div>
+                    </ParagraphLight>
+                </ProjectLeft> */}
+                <ProjectRight
+                    projectTitle={'ERC20 Token Subgraph'}
+                    bgImage={'bg-virus'}
+                    techStack={['TypeScript', 'NodeJS', 'GraphQL', 'Ethereum', 'SubGraph', 'Solidity', 'Docker']}
+                    buttonWatchItLive={'https://github.com/cooldev900/ERC20-token-subgraph'}
+                    buttonDescription={'https://github.com/cooldev900/ERC20-token-subgraph'}
+                    buttonGitHub={'https://github.com/cooldev900/ERC20-token-subgraph'}>
+                    <ParagraphLight>
+                        <p>This project is a comprehensive subgraph designed to index and query information about ERC-20 tokens, including token holders, transfers, balance changes, and overall token metrics like total supply and volume. It uses The Graph protocol to provide efficient data retrieval for on-chain token activity.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The subgraph tracks detailed holder information including balances and historical balance changes, provides comprehensive token metrics like total supply and transfer volume, records all token transfers with sender, receiver, value, timestamp, and transaction hash, and captures historical data allowing querying over specific time periods.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Key Features</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Holder Information:</strong> Tracks token holders, their balances, and historical balance changes with detailed analytics.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Token Metrics:</strong> Provides comprehensive data including total supply and total volume of tokens transferred across the network.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Transfer Data:</strong> Records all token transfers with complete metadata including sender, receiver, value, timestamp, and transaction hash for full transparency.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Historical Data:</strong> Captures balance changes and allows querying over specific time periods for trend analysis and reporting.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Technical Implementation</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The project uses <strong>The Graph</strong> subgraph framework for indexing and querying blockchain data, <strong>GraphQL</strong> for efficient data querying, <strong>AssemblyScript</strong> for writing mapping functions, and integrates with <strong>Ethereum</strong> blockchain for real-time data.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The schema includes four main entities: <strong>Holder</strong> (token holder information), <strong>Transfer</strong> (individual token transfers), <strong>Token</strong> (overall token metrics), and <strong>BalanceChange</strong> (historical balance tracking).</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>This project demonstrates advanced blockchain development skills, including smart contract interaction, data indexing, and building scalable infrastructure for decentralized applications.</p>
+                    </ParagraphLight>
+                </ProjectRight>
+                <ProjectLeft
+                    projectTitle={'M-Token Viewer'}
+                    bgImage={'bg-virus'}
+                    techStack={['VueJS', 'Nuxt', 'TailwindCSS', 'TypeScript', 'GraphQL', 'Subgraph']}
+                    buttonWatchItLive={'https://github.com/cooldev900/m-token-viewer'}
+                    buttonDescription={'https://github.com/cooldev900/m-token-viewer'}
+                    buttonGitHub={'https://github.com/cooldev900/m-token-viewer'}>
+                    <ParagraphLight>
+                        <p>M-Token Viewer is a comprehensive web application designed to showcase information about the M-Token on Ethereum networks (Mainnet and Sepolia). This project utilizes Viem, Wagmi, and Reowned Kit for wallet interaction and a Subgraph for querying token-related data like holders, balances, volume, and balance history.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The application provides seamless wallet integration with support for multiple Ethereum networks, real-time token data visualization, and comprehensive analytics for token holders and trading activity.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Key Features</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Wallet Integration:</strong> Set up using Viem, Wagmi, and Reowned Kit for seamless wallet connections and blockchain interactions across Mainnet and Sepolia networks.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Subgraph Deployment:</strong> Deployed separate subgraphs for Mainnet and Sepolia networks, providing efficient data retrieval for token holders, balances, volume, and balance history.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Data Visualization:</strong> Developed reusable components with integrated charts and tables to visualize token metrics like balance history and volume trends using ApexCharts.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Token Balance Display:</strong> Real-time display of current M-Token balance for connected wallets using Wagmi's useBalance hook with network switching capabilities.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Technical Implementation</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>Built with <strong>Vue 3</strong> and <strong>Nuxt</strong> for the frontend framework, <strong>TailwindCSS</strong> for responsive UI design, and <strong>TypeScript</strong> for type-safe development. The application uses <strong>GraphQL</strong> for efficient data querying through the deployed Subgraphs.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The project demonstrates advanced blockchain integration skills, including wallet connection management, multi-network support, real-time data fetching from Subgraphs, and sophisticated data visualization for DeFi applications.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>This project showcases expertise in modern web development frameworks, blockchain technology integration, and building user-friendly interfaces for complex DeFi data visualization.</p>
+                    </ParagraphLight>
+                </ProjectLeft>
+                <ProjectRight
+                    projectTitle={'Distributed Task Scheduler'}
+                    bgImage={'bg-virus'}
+                    techStack={['React', 'Docker', 'Microservices', 'TypeScript', 'Kafka', 'MongoDB', 'NestJS', 'NextJS', 'NX', 'TailwindCSS']}
+                    buttonWatchItLive={'http://localhost:4200'}
+                    buttonDescription={'https://github.com/cooldev900/distributed-task-scheduler'}
+                    buttonGitHub={'https://github.com/cooldev900/distributed-task-scheduler'}>
+                    <ParagraphLight>
+                        <p>A comprehensive distributed task scheduler system designed to handle both one-time and recurring tasks with high availability and scalability. The system ensures tasks are picked up and executed within 10 seconds of their scheduled time, making it suitable for calendar reminders, distributed cron jobs, and scheduled notifications.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The architecture implements a microservices-based approach with Kafka for message queuing, MongoDB for persistent storage, and Docker for containerization, ensuring high availability and fault tolerance across distributed components.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Key Features</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Task Types:</strong> Supports both one-time tasks (scheduled at specific times) and recurring tasks (using Cron syntax) with automatic execution according to schedule.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>High Availability:</strong> Designed with distributed architecture ensuring system resilience and fault tolerance across multiple components and services.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Real-Time Monitoring:</strong> Provides task execution status tracking and logging through a dedicated frontend interface accessible at localhost:4200/task-logs.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Scalable Architecture:</strong> Microservices-based design with Kafka message queuing, MongoDB persistence, and Docker containerization for easy scaling and deployment.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Technical Implementation</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>Built with <strong>React</strong> and <strong>NextJS</strong> for the frontend, <strong>NestJS</strong> for backend microservices, <strong>Kafka</strong> for message queuing and task distribution, <strong>MongoDB</strong> for persistent data storage, and <strong>Docker</strong> with <strong>Docker Compose</strong> for containerization and orchestration.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The system includes <strong>Kafka producers and consumers</strong> for task distribution, <strong>gateway microservices</strong> for API management, <strong>NX monorepo</strong> structure for code organization, and <strong>Shadcn-UI</strong> for modern component design.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>This project demonstrates advanced distributed systems design, microservices architecture, real-time task scheduling, and building scalable infrastructure for high-availability applications.</p>
+                    </ParagraphLight>
+                </ProjectRight>
+                <ProjectLeft
+                    projectTitle={'Real-Time Chat Application'}
+                    bgImage={'bg-virus'}
+                    techStack={['React', 'TypeScript', 'Express', 'Socket.IO', 'Prisma', 'MongoDB', 'Docker', 'Turborepo', 'MUI', 'Redis']}
+                    buttonWatchItLive={'http://localhost:3000'}
+                    buttonDescription={'https://github.com/cooldev900/chat-app'}
+                    buttonGitHub={'https://github.com/cooldev900/chat-app'}>
+                    <ParagraphLight>
+                        <p>A comprehensive real-time chat application built as a monorepo using Turborepo for efficient multi-package project management. The application features real-time communication powered by Socket.IO, with a React frontend and Express backend, all built with TypeScript for type safety.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The project demonstrates modern full-stack development practices with a microservices architecture, containerized database management, and efficient monorepo orchestration for scalable application development.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Key Features</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Real-time Communication:</strong> Powered by Socket.IO for instant messaging capabilities with live updates and real-time user interactions.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Database Management:</strong> MongoDB with Prisma ORM for efficient schema management and type-safe database operations.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Monorepo Architecture:</strong> Turborepo for efficient task orchestration across multiple workspaces and packages.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p><strong>Containerized Development:</strong> Docker integration for MongoDB database with persistent data storage and easy deployment.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <H4Header>Technical Implementation</H4Header>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>Built with <strong>React</strong> and <strong>TypeScript</strong> for the frontend with Material-UI components, <strong>Express</strong> and <strong>Socket.IO</strong> for the backend real-time server, <strong>Prisma</strong> ORM for database management, and <strong>MongoDB</strong> running in Docker containers.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>The project uses <strong>Turborepo</strong> for monorepo management, enabling efficient development workflows with shared configurations, optimized builds, and streamlined testing across frontend and backend applications.</p>
+                    </ParagraphLight>
+                    <ParagraphLight>
+                        <p>This project showcases expertise in modern full-stack development, real-time application architecture, database design, and building scalable applications with containerized infrastructure.</p>
                     </ParagraphLight>
                 </ProjectLeft>
             </section>

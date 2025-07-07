@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { Divide as Hamburger } from 'hamburger-react';
 
 const HamburgerMenu = props => {
@@ -33,7 +34,7 @@ const HamburgerMenu = props => {
                     <ul class='p-6 pt-20 overflow-y-auto w-80 bg-base-100 flex-col '>
                         <li><a href='#section-projects' class='btn w-full mb-5' onClick={clickHandler}>Projects</a> </li>
                         {/* <li><a href='#section-code-library' class='btn w-full mb-5'>Code<span class='hidden sm:inline sm:ml-2' onClick={clickHandler}>Library</span></a> </li> */}
-                        <li><a href='#section-blog-posts' class='btn w-full mb-5' onClick={clickHandler}>Blog<span class='hidden sm:inline sm:ml-2'>Posts</span></a> </li>
+                        {/* <li><a href='#section-blog-posts' class='btn w-full mb-5' onClick={clickHandler}>Blog<span class='hidden sm:inline sm:ml-2'>Posts</span></a> </li> */}
                         <li><a href='#section-about' class='btn w-full mb-5' onClick={clickHandler}>About</a> </li>
                         <li><a href='#section-contact' class='btn w-full mb-5' onClick={clickHandler}>Contact</a> </li>
                     </ul>

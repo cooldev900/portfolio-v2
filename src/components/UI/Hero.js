@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'react';
+import {
+  useEffect,
+  useState,
+} from 'react';
+
+import hero1 from '../../assets/img/hero.png';
 import locationPin from '../../assets/img/locationPin.png';
-import hero1 from '../../assets/img/hero1.webp';
-import resume from '../../assets/pdf/Damian-Demasi-Resume.pdf';
+import resume from '../../assets/pdf/david-park-resume.pdf';
 import EmailOptions from './EmailOptions';
 
 const Hero = props => {
@@ -56,21 +60,22 @@ const Hero = props => {
 
     return (
         <div class='hero min-h-85vh'>
-            <div class='text-left hero-content items-start'>
-                <div>
-                    <img src={hero1} alt='Damian Demasi with a hat in a park on a sunny day.' class='mt-10 hidden lg:block lg:max-w-xs xl:max-w-md' />
+            <div class='text-left hero-content items-start flex flex-col lg:flex-row gap-6 lg:gap-10'>
+                <div class="w-full flex justify-center">
+                    <img src={hero1} alt='David Park with a hat in a park on a sunny day.' class='mt-10 w-64 h-64 rounded-full border-4 border-white shadow-lg object-cover ring-4 ring-blue-200' />
                 </div>
                 <div class='max-w-2xl'>
-                    <p class='mb-5'><span><img src={locationPin} class='h-4 inline mb-1 mr-1' alt='Location pin icon' /></span>Adelaide, Australia</p>
+                    <p class='mb-5'><span><img src={locationPin} class='h-4 inline mb-1 mr-1' alt='Location pin icon' /></span>Novi Sad, Serbia</p>
                     <h1 class='mb-5 font-bold font-poppins'>
-                        <span class={tailwindClassName}>Damian Demasi,</span><br /><span class={tailwindClassWeb}>web</span><br /><span class={tailwindClassDeveloper}>developer</span>
+                        <span class={tailwindClassName}>David Park,</span><br /><span class={tailwindClassWeb}>Blockchain</span><br /><span class={tailwindClassDeveloper}>Engineer</span>
                     </h1>
                     <p class='my-8 md:my-16 text-neutral xl:leading-loose'>
-                        I’m a Web Developer based in Adelaide, Australia. Even though I have a Telecommunications Engineering degree and an MBA, coding is my passion and my new professional career focus. Developing applications for the web has become my drive.
+                    <strong>David</strong> is a highly skilled professional with expertise in full-stack development, distributed computing,
+and Blockchain technologies.
                     </p>
                     <a href={resume} target='_blank' rel="noreferrer" class='btn mr-10 btn-md text-xs mb-5 sm:mb-0'>Get my Resume</a>
                     <div class="dropdown dropdown-hover">
-                        <a href='mailto:work@damiandemasi.com' target='_blank' rel="noreferrer" class="btn btn-outline btn-md text-xs">work@damiandemasi.com</a>
+                        <a href='mailto:davdpark1026@gmail.com' target='_blank' rel="noreferrer" class="btn btn-outline btn-md text-xs">davdpark1026@gmail.com</a>
                         <EmailOptions />
                     </div>
                 </div>
