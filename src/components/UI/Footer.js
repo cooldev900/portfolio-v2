@@ -25,9 +25,9 @@ const Footer = props => {
                         <EmailOptions />
                     </div>
                     <div class="mt-14 flex justify-between">
-                        <IconBlack icon={iconLinkedIn} goTo='https://www.linkedin.com/in/damian-demasi/' ariaLabel='LinkedIn'>LinkedIn</IconBlack>
-                        <IconBlack icon={iconTwitter} goTo='https://twitter.com/DamianDemasi' ariaLabel='Twitter'>Twitter</IconBlack>
-                        <IconBlack icon={iconGitHub} goTo='https://github.com/Colo-Codes' ariaLabel='GitHub'>GitHub</IconBlack>
+                        <IconBlack icon={iconLinkedIn} goTo='https://www.linkedin.com/' ariaLabel='LinkedIn'>LinkedIn</IconBlack>
+                        <IconBlack icon={iconTwitter} goTo='https://twitter.com/davdpark1026' ariaLabel='Twitter'>Twitter</IconBlack>
+                        <IconBlack icon={iconGitHub} goTo='https://github.com/cooldev900' ariaLabel='GitHub'>GitHub</IconBlack>
                     </div>
                     <div class='mt-10 text-xs'>
                         <p>👨‍💻 Portfolio site made by David Park, using<img src={iconReact} alt="" class='w-7 inline -mx-1' />ReactJS, <img src={iconTailwind} alt="" class='w-4 inline mx-1' />TailwindCSS and DaisyUI.</p>
